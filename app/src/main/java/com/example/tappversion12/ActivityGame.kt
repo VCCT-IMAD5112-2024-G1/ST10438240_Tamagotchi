@@ -76,6 +76,7 @@ class ActivityGame : AppCompatActivity() {
         val textViewHygiene: TextView = findViewById(R.id.textvViewHygiene)
         val textViewHealth: TextView = findViewById(R.id.textViewHealth)
 
+        //textview status levels
         textViewHunger.text = "Hunger: $hungerLevel/5"
         textViewHygiene.text = "Hygiene: $hygieneLevel/5"
         textViewHealth.text = "Health: $healthLevel/5"
