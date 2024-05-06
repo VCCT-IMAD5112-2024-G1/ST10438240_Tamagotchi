@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ActivityGame">
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="107dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="3dp"
+        android:background="#F8BBD0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Feed"
+        android:textColor="#D81456"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/playButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catPicture" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="103dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="48dp"
+        android:background="#F8BBD0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Play"
+        android:textColor="#D81B60"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cleanButton"
+        app:layout_constraintStart_toEndOf="@+id/feedButton"
+        app:layout_constraintTop_toBottomOf="@+id/catPicture" />
+
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="107dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:background="#F8BBD0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Clean"
+        android:textColor="#D1255F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/catPicture" />
+
+    <ImageView
+        android:id="@+id/catPicture"
+        android:layout_width="350dp"
+        android:layout_height="297dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_screen" />
+
+    <TextView
+        android:id="@+id/textViewHunger"
+        android:layout_width="147dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="133dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/textvViewHygiene"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="136dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHunger" />
+
+    <TextView
+        android:id="@+id/textViewHealth"
+        android:layout_width="148dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="133dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textvViewHygiene" />
+</androidx.constraintlayout.widget.ConstraintLayout>
